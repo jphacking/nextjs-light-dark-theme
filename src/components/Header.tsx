@@ -9,11 +9,10 @@ interface HeaderProps {
   isDarkMode: boolean;
 }
 
-// Header component that displays a navigation bar and a theme toggle switch
 const Header: React.FC<HeaderProps> = ({ onThemeToggle, isDarkMode }) => {
   return (
     <header className="relative">
-      {/* Theme toggle switch (fixed at top right) */}
+      {/* Dark Mode Toggle */}
       <div className="theme-switch-wrapper fixed right-6 top-6 flex items-center z-50">
         <span id="toggle-icon" className="flex items-center mr-2">
           <span className="toggle-text">
